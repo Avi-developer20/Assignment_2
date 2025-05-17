@@ -98,13 +98,17 @@ class _Assignment2State extends State<Assignment2> {
     int count = isSmallScreen ? 2 : screenWidth <= 1024 ? 3 : 4;
     double fontsize = isSmallScreen ? 18 : 30;
          double aspectratio;
-      if(screenWidth <= 768){
-        aspectratio = 0.6;
-      }else if(screenWidth <= 1024){
-        aspectratio = 0.8;
-      }else{
-        aspectratio = 0.9;
-      }
+    if (screenWidth <= 768) {
+      aspectratio = 0.5;
+
+    } else if (screenWidth <= 1024) {
+      aspectratio = 0.7;
+
+    } else {
+      aspectratio = 0.7;
+
+    }
+
 
 
     return Scaffold(
@@ -286,7 +290,7 @@ class _Assignment2State extends State<Assignment2> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.center,
-                                  maxLines: 3,
+                                  maxLines: 4,
                                   overflow: TextOverflow.visible,
                                 ),
                               ),
