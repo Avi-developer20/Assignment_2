@@ -105,14 +105,7 @@ class _Assignment2State extends State<Assignment2> {
       }else{
         aspectratio = 0.9;
       }
-      double height;
-      if(screenHeight <= 768){
-        height = 100;
-      }else if(screenHeight <= 1024){
-        height = 170;
-      }else{
-        height = 200;
-      }
+
 
     return Scaffold(
       appBar: AppBar(
@@ -152,7 +145,7 @@ class _Assignment2State extends State<Assignment2> {
                             Image.asset(
                               item["image"],
                               width: double.infinity,
-                              height: height,
+                              height: 100,
                               fit: BoxFit.cover,
                             ),
                             const SizedBox(height: 10),
